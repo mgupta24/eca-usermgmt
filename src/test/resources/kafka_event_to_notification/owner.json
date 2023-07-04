@@ -1,0 +1,17 @@
+{
+  "eventType": "CREATE",
+  "owner": {
+    "addressLine": "PB",
+    "city": "UDHAMPUR",
+    "emailId": "owner-1231-test@gmail.com",
+    "firstName": "Owner2Second",
+    "lastName": "LastOwner",
+    "password": "Owner@1234",
+    "phoneNo": 990673616231,
+    "state": "J&K",
+    "type": "OWNER",
+    "zipCode": "184292"
+  },
+  "password": "Owner@1234",
+  "userId": "owner-1231-test@gmail.com"
+}

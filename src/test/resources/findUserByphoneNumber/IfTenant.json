@@ -1,0 +1,24 @@
+{
+  "timestamp": "2023-05-15T14:16:27.3610123",
+  "data": [
+    {
+      "id": 6,
+      "userId": "tenant-user@gmail.com",
+      "password": "tenant@1234",
+      "userPhoneNumber": 98581214851,
+      "tenant": {
+        "type": "TENANT",
+        "firstName": "Vendor2_First_Name",
+        "lastName": "JK_Vendor",
+        "phoneNo": 98581214851,
+        "emailId": "tenant-user@gmail.com",
+        "addressLine": "PB",
+        "city": "Solan",
+        "state": "HP",
+        "zipCode": "",
+        "password": "",
+        "id":5
+      }
+    }
+  ]
+}

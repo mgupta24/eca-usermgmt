@@ -1,0 +1,55 @@
+spring:
+  config:
+    import: ${CONFIG_IMPORT_URL:configserver:http://localhost:8070}
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8070}
+      fail-fast: false
+      retry:
+        maxAttempts: 20
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER_URL:localhost:9094}
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:postgresql://${POSTGRESQL_URI:localhost}:5432/${USER_MGM_POSTGRES_DB:postgres}
+    username: ${POSTGRES_USER_NAME:postgres}
+    password: ${POSTGRES_USER_PASSWORD:password}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+logging:
+  level:
+    org.springframework.web: INFO
+    com.eca.usermgmt: INFO
+    org.hibernate: ERROR
+    org.springframework.orm.jpa: ERROR
+    org.springframework.security: ERROR
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["beans", "metrics","health","heapdump","info","liquibase","prometheus","env","beans","sessions"]
+        exclude: "loggers,shutdown,startup"
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+app:
+  kafka:
+    enabled: true
+  topic:
+    name: ${USER_MGM_TOPIC:user_mgmt_to_notify_local}
+    partitions: ${KAFKA_PARTITIONS:1}
+    replica-factor: ${REPLICA_FACTOR:1}
+  application:
+    cache:
+      expiryInSec: 10800

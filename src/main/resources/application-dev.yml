@@ -1,0 +1,39 @@
+spring:
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:h2:mem:ecausermgmt
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  cloud:
+    discovery:
+      enabled: false
+    config:
+      enabled: false
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    redis:
+      enabled: false
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.eca.usermgmt: INFO
+    org.hibernate: INFO
+    org.springframework.orm.jpa: WARN
+    org.springframework.security: INFO
+
+app:
+  kafka:
+    enabled: false
+  cache:
+    enabled: false

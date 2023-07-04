@@ -1,0 +1,20 @@
+{
+  "eventType": "UPDATE",
+  "password": "tenant@123",
+  "tenant": {
+    "addressLine": "UpdatedAddress ",
+    "apartmentCost": 450000,
+    "city": "updatedKathua",
+    "emailId": "updated@gmail.com",
+    "firstName": "updatedF",
+    "lastName": "updatedL",
+    "leaseEndDate": "2028-02-24T19:57:50.837226500",
+    "leaseStartDate": "2023-02-24T19:57:50.837226500",
+    "password": "tenant@123",
+    "phoneNo": 990613536,
+    "state": "updatedJ&K",
+    "type": "TENANT",
+    "zipCode": "184148"
+  },
+  "userId": "updated@gmail.com"
+}

@@ -1,0 +1,17 @@
+{
+  "eventType": "CREATE",
+  "userId": "vendor2.test@gmail.com",
+  "password": "vendor@1234",
+  "vendor": {
+    "type": "VENDOR",
+    "firstName": "Vendor2_First_Name",
+    "lastName": "JK_Vendor",
+    "phoneNo": 98581214851,
+    "emailId": "vendor2.test@gmail.com",
+    "addressLine": "PB",
+    "city": "Solan",
+    "state": "HP",
+    "zipCode": "37883",
+    "password": "vendor@1234"
+  }
+}

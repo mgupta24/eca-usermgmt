@@ -1,0 +1,66 @@
+spring:
+  application:
+    name: ecausermgmt
+  cloud:
+    inetutils:
+      preferredNetworks: ${EUREKA_PREFERRED_NETWORKS:198.168}
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1
+server:
+  port: ${USER_MGM_PORT:6090}
+
+eureka:
+  instance:
+    preferIpAddress: ${EUREKA_PREFER_IP:false}
+    hostname: ${HOST_NAME_USERMGM:localhost}
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+logging:
+  level:
+    root: INFO
+app:
+  secret:
+    key: ${JWT_SECRET_KEY:Vfj69nm&^%3KjinRvFVSKJSJKJKhjsd87812jkJKJKLAAJK}
+  jwt:
+    expirationTime: ${JWT_EXPIRATION_TIME:1734431739}
+  cache:
+    enabled: true
+    expiryTimeoutInMinutes: ${CACHE_EXPIRY_TIMEOUT:60}
+  pool:
+    maxIdle: ${POOL_MAX_IDLE:15}
+    maxTotal: ${POOL_MAX_TOTAL:25}
+    minIdle: ${POOL_MIN_IDLE:10}
+  redis:
+    host: ${REDIS_HOSTNAME:localhost}
+    port: ${REDIS_PORT:6379}
+    password: ${REDIS_PASSWORD:}
+    connectTimeOutInSeconds: 120
+  openapi:
+    dev-url: http://localhost:${server.port}
+    prod-url: ${SWAGGER_IP_ADDRESS:http://localhost:6090}
+feign:
+  httpclient:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: ${FEIGN_CONNECT_TIMEOUT:5000}
+        readTimeout: ${FEIGN_READ_TIMEOUT:5000}
+        loggerLevel: BASIC
+
+catalog-service:
+  baseUrl: ${CATALOG_SERVICE_URL:http://localhost:8080}

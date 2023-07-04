@@ -1,0 +1,17 @@
+{
+  "eventType": "UPDATE",
+  "password": "updatedvendor@test.com",
+  "userId": "updated-vendor829@test.com",
+  "vendor": {
+    "addressLine": "UpdatedMARH_NEW",
+    "city": "UpdwtedNew",
+    "emailId": "updated-vendor829@test.com",
+    "firstName": "updated-vendor",
+    "lastName": "updatedvendorLast",
+    "password": "updatedvendor@test.com",
+    "phoneNo": 992822222,
+    "state": "UpdatedVENDORJ&K",
+    "type": "VENDOR",
+    "zipCode": "182348"
+  }
+}

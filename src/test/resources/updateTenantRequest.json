@@ -1,0 +1,16 @@
+{
+  "type": "TENANT",
+  "firstName": "Mitali",
+  "lastName": "Gupta",
+  "phoneNo": 9590311726,
+  "emailId": "mitaligupta@gmail.com",
+  "addressLine": "Marheen",
+  "city": "kathua",
+  "state": "Raj",
+  "zipCode": "184148",
+  "password": null,
+  "id": 1,
+  "apartmentCost": 678899,
+  "leaseStartDate": "24/02/2022",
+  "leaseEndDate": "24/02/2026"
+}

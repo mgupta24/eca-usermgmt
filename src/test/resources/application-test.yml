@@ -1,0 +1,30 @@
+app:
+  kafka:
+    enabled: false
+  cache:
+    enabled: false
+    expiryTimeoutInMinutes: 30
+  secret:
+    key: Vfj69nm&^%3KjinRvFVSKJSJKJKhjsd87812jkJKJKLAAJK
+  jwt:
+    expirationTime: 1734431739
+  application:
+    cache:
+      expiryInSec: 10800
+spring:
+  config:
+    import: "optional:configserver:"
+  cloud:
+    discovery:
+      enabled: false
+    config:
+      server:
+        enabled: false
+  datasource:
+    url: jdbc:h2:mem:ecausermgmt
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+

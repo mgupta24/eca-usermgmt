@@ -1,0 +1,17 @@
+{
+  "eventType": "UPDATE",
+  "owner": {
+    "addressLine": "UpdatedBLR",
+    "city": "UpdwtedUDHAMPUR",
+    "emailId": "owner-updated@gmail.com",
+    "firstName": "updated-owner",
+    "lastName": "updatedOwnerLast",
+    "password": "updatedOwner@test.com",
+    "phoneNo": 700613533,
+    "state": "UpdatedJ&K",
+    "type": "OWNER",
+    "zipCode": "184148"
+  },
+  "password": "updatedOwner@test.com",
+  "userId": "owner-updated@gmail.com"
+}

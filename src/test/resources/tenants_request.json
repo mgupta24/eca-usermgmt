@@ -1,0 +1,16 @@
+{
+  "firstName": "Test",
+  "lastName": "tenant",
+  "phoneNo": "9590319289",
+  "emailId": "tenant-test@gmail.com",
+  "addressLine": "JAMMU",
+  "city": "JAMMU",
+  "state": "J&K",
+  "zipCode": "184105",
+  "password": "tenant@123",
+  "apartmentCost": "450000",
+  "type": "TENANT",
+  "leaseStartDate": "24/03/2022",
+  "leaseEndDate" : "24/04/2025",
+  "apartmentId": 1
+}

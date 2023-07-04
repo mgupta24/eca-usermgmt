@@ -1,0 +1,13 @@
+{
+  "firstName": "OwnerFirst",
+  "lastName": "LastOwner",
+  "phoneNo": "9906736633",
+  "emailId": "owner.test@gmail.com",
+  "addressLine": "PB",
+  "city": "UDHAMPUR",
+  "state": "J&K",
+  "zipCode": "184292",
+  "password": "Owner@123",
+  "type": "OWNER",
+  "apartmentId": 1
+}

@@ -1,0 +1,20 @@
+{
+  "eventType": "CREATE",
+  "password": "tenant@123",
+  "tenant": {
+    "addressLine": "JAMMU",
+    "apartmentCost": 450000,
+    "city": "JAMMU",
+    "emailId": "tenant.test@gmail.com",
+    "firstName": "newUser",
+    "lastName": "newLastName",
+    "leaseEndDate": "2023-04-24T19:55:08.301162800",
+    "leaseStartDate": "2022-03-24T19:55:08.301162800",
+    "password": "tenant@123",
+    "phoneNo": 95839382,
+    "state": "J&K",
+    "type": "TENANT",
+    "zipCode": "184105"
+  },
+  "userId": "tenant.test@gmail.com"
+}

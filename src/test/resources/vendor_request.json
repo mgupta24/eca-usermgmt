@@ -1,0 +1,13 @@
+{
+  "firstName": "Vendor_First_Name",
+  "lastName": "JK_Vendor",
+  "phoneNo": "9858121489",
+  "emailId": "vendor.test@gmail.com",
+  "addressLine": "PB",
+  "city": "Solan",
+  "state": "HP",
+  "zipCode": "37883",
+  "password": "vendor@123",
+  "type": "VENDOR",
+  "apartmentId": 1
+}
